@@ -1,8 +1,13 @@
 'use strict';
+
+
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-
+/*
+* Schema para criar o link com o banco de dados.
+*
+*/
 var UserSchema = new Schema({
   name: {
     type: String,

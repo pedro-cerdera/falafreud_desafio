@@ -2,7 +2,7 @@
 module.exports = function(app) {
   var userList = require('../controllers/userListController');
 
-  // userList Routes
+  // Rotas que definem que os protocolos serão utilizados corretamente
   app.route('/user')
     .get(userList.list_all_users)
     .post(userList.create_a_user);
